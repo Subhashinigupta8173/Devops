@@ -1,0 +1,43 @@
+ 
+🗂 Git Basics: Centralized vs Distributed Systems
+🔹 Centralized Version Control System (CVCS)
+- How it works:
+- There is a single central repository (server).
+- Developers connect to it via terminal and fetch/update code directly.
+- Example: CVS, Subversion (SVN).
+- Limitations:
+- Single Point of Failure (SPOF): If the central server goes down, no one can commit or fetch code.
+- Developers don’t have a full copy of the repo locally; they depend on the server.
+🔹 Distributed Version Control System (DVCS)
+- How it works:
+- Every developer has a full copy of the repository (including history) on their local machine.
+- Changes are made locally and then pushed to a shared remote repo (e.g., GitHub, GitLab).
+- Example: Git, Mercurial.
+- Advantages:
+- No SPOF — even if the server is down, developers can continue working locally.
+- Faster operations (commits, diffs, logs happen locally).
+- Easier branching and merging.
+
+⚙️ Git Commands Cheat Sheet
+🔹 Repository Setup
+- git init → Initialize a new repository.
+- git clone <repo-url> → Clone (download) the entire repository.
+🔹 Remote Management
+- git remote add origin <repo-url> → Add a remote repository named origin.
+- git remote remove origin → Remove the remote origin.
+- git remote -v → Show all remote URLs.
+- git remote show origin → Show detailed info about the origin remote.
+🔹 User Configuration
+- git config --global user.name "Your Name" → Set global username.
+- git config --global user.email "your@email.com" → Set global email.
+🔹 Working with Files
+- Files stay in the working directory until staged.
+- git add . → Stage all changes (move to staging area).
+- git commit -m "Commit message" → Commit changes locally.
+- git push → Push commits to the remote repository (global level).
+
+🌐 Data Fetch Methods in Git
+- HTTP/HTTPS → Simple authentication via username/password or tokens.
+- SSH → Secure authentication using SSH keys (preferred for security).
+
+
