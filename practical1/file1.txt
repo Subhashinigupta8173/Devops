@@ -1,4 +1,4 @@
- 
+ practical1
 🗂 Git Basics: Centralized vs Distributed Systems
 🔹 Centralized Version Control System (CVCS)
 - How it works:
